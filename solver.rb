@@ -7,6 +7,18 @@
 @l = 0
 @w = 0
 
+def question(n)
+  0.upto(8) do |i|
+    return unless n[i]
+
+    row = ''
+    n[i].each do |number|
+      row += number.to_s + ' '
+    end
+    puts row
+  end
+end
+
 def solve
   loop do
     p @l
@@ -15,4 +27,4 @@ def solve
   end
 end
 
-solve
+question([[1, 2, 3, 4, 5, 6, 7, 8,  9],[1, 2, 3, 4, 5, 6, 7, 8,  9]])
